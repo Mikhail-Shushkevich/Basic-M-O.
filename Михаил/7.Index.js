@@ -26,8 +26,8 @@ const handleFormSubmit = (event) => {
         newChild.querySelector(".x-small").textContent = data.expDescription
 
         parent.appendChild(newChild);
-    }else if(data.expType === "edukation"){
-        const parent = document.querySelector(".edukation")
+    }else if(data.expType === "education"){
+        const parent = document.querySelector(".education")
         const child = document.querySelector(".edu")
         const newChild = child.cloneNode(true)
         newChild.querySelector(".medium").textContent = data.title
