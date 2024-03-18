@@ -67,6 +67,8 @@ margin-left: 40px;
 }
 
 #addExpForm {
+    position: sticky;
+    top: 100px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -76,6 +78,7 @@ margin-left: 40px;
     margin: 0 auto;
     padding: 20px 40px 60px 40px;
     text-align: center;
+    box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
 .formInput {
@@ -181,4 +184,18 @@ a{
     height: 22px;
     left: 17px;
     top: 9px;
+}
+
+
+.formWrapper{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.none{
+    display: none;
 }
