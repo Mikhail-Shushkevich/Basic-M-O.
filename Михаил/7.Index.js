@@ -3,10 +3,21 @@ const showForm = () => {
 };
 
 const handleClickOnTheBlur = (event) => {
-    if (event.target.className === "formWrapper") {
+    if (event.target.className === "formWrapper" || event.target.className === "cancel large") {
         document.querySelector(".formWrapper").classList.add("none");
     }
 };
+
+const handleSelectChanged = (event) => {
+    const value = event.target.value;
+    if (value === "Work") {
+        document.querySelector("#expDescriptione").classList.remove("none");
+    } else if (value === "Education") {
+        document.querySelector("#expDescription").classList.add("none");
+    } else {
+        console.error("Unknown Exp Type");
+    }
+}
 
 const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -26,7 +37,7 @@ const handleFormSubmit = (event) => {
         newChild.querySelector(".x-small").textContent = data.expDescription
 
         parent.appendChild(newChild);
-    }else if(data.expType === "education"){
+    } else if (data.expType === "education") {
         const parent = document.querySelector(".education")
         const child = document.querySelector(".edu")
         const newChild = child.cloneNode(true)
@@ -34,8 +45,8 @@ const handleFormSubmit = (event) => {
         newChild.querySelector(".altText small").textContent = data.Subtitle
         parent.appendChild(newChild);
 
-    }else{
-        console.error("Unknown type")
+    } else {
+        console.error(".Unknown type");
     }
 
     event.target.title.value = ""
