@@ -1,5 +1,5 @@
 * {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-family: Arial;
     font-style: normal;
     font-weight: 500;
 }
@@ -18,13 +18,13 @@ body {
 }
 
 .secondary {
-    color: blue;
+    color: rgb(27, 27, 128);
 }
 
 .altText,
 *::placeholder {
     color: grey;
-    font-family: Prata, Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 header {
@@ -131,7 +131,7 @@ a {
 }
 
 #skills {
-    color: orange;
+    color: rgb(27, 27, 128);
 }
 
 
@@ -143,21 +143,21 @@ a {
 
 
 .small {
-    font-size: 11px;
+    font-size: 16px;
     line-height: 16px;
 }
 
 .x-small {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 .medium {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .large {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
 }
 
@@ -167,7 +167,7 @@ a {
 }
 
 .submit {
-    background-color: blue;
+    background-color: rgb(27, 27, 128);
 }
 
     .cancel {
@@ -193,7 +193,7 @@ a {
     padding: 18px;
     border: 1px solid white;
     border-radius: 20px;
-    background-color: blue;
+    background-color: rgb(27, 27, 128);
 }
 
 #addExpBtn::before {
